@@ -233,9 +233,6 @@ main {
   width: 100%;
   height: 500px;
 }
-#sec-hero section > div {
-  /* background-color: red; */
-}
 
 #first div.left {
   width: 200%;
@@ -378,7 +375,7 @@ section.third-her-sec img {
 
 .fh-sections {
   width: 90vw;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -450,7 +447,7 @@ section.third-her-sec img {
 }
 .fh-lst-cont {
   width: 100%;
-  height: 65%;
+  height: 71%;
 }
 .fh-lst-cont.full-img img {
   width: 100%;
