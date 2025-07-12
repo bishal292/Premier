@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 
+    Linking Google Fonts for the page.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Linking Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="left-nav">
+                <h1 class="logo">Premier</h1><sup>&copy;</sup>
+                <div>
+                    model management
+                </div>
+            </div>
+            <div class="right-nav">
+                <h2>Models</h2>
+                <h2>Women / Man</h2>
+                <h2>Agency / Blog / Information</h2>
+                <h2><i class="ri-search-line"></i></h2>
+            </div>
+
+        </nav>
+        <!-- First Section Video Display along with Overlay Text -->
+        <div id="hero">
+            <div id="video-sec">
+                <video src="./demo.mp4" alt="Hero Image" autoplay muted loop> </video>
+                <div id="overlay-text">
+                    <div id="ot-first">
+                        <h1>Photography <br> and films</h1>
+                        <div>01</div>
+                    </div>
+                    <div id="ot-sec">
+                        <h4>Explore</h4>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="marquee">
+            <div id="marquee-track">
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/1.jpg" alt="Image">
+                    </div>
+                    <div>Chen Liu</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/2.jpg" alt="Image">
+                    </div>
+                    <div>Maria Gomez</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/3.jpg" alt="Image">
+                    </div>
+                    <div>Alex Kim</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/4.jpg" alt="Image">
+                    </div>
+                    <div>Sophia Lee</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/5.jpg" alt="Image">
+                    </div>
+                    <div>Lucas Wang</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/6.jpg" alt="Image">
+                    </div>
+                    <div>Emma Brown</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/7.jpg" alt="Image">
+                    </div>
+                    <div>David Smith</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/8.jpg" alt="Image">
+                    </div>
+                    <div>Olivia Jones</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/9.jpg" alt="Image">
+                    </div>
+                    <div>William Chen</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/10.jpg" alt="Image">
+                    </div>
+                    <div>Isabella Rossi</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/11.jpg" alt="Image">
+                    </div>
+                    <div>James Patel</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/12.jpg" alt="Image">
+                    </div>
+                    <div>Mia Dubois</div>
+                </div>
+                <div class="data-container">
+                    <div class="image-container">
+                        <img src="./images/13.jpg" alt="Image">
+                    </div>
+                    <div>Benjamin Novak</div>
+                </div>
+            </div>
+        </div>
+        <!-- Filter Bar -->
+        <div id="filter">
+            <h3>ALL</h3>
+            <div id="letter-cont">
+                <script>
+                    for (let i = 65; i < 91; i++) {
+                        const str = String.fromCharCode(i);
+                        const span = document.createElement('span');
+                        span.textContent = str;
+                        span.classList.add('filter-text');
+                        if (str === 'F') {
+                            span.classList.add('active');
+                        } else if (str === 'H') {
+                            span.classList.add('empty');
+                        }
+                        document.currentScript.parentElement.appendChild(span);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- Second Hero Section -->
+        <div id="sec-hero">
+            <section id="first">
+                <div class="left">
+                    <img src="./banners/1.jpg" alt="">
+                    <h1>VOGUE / SHOT</h1>
+                </div>
+                <div class="right">
+                    <img src="./banners/2.jpg" alt="">
+                    <div>
+                        <div>Hannah Motler features in a fashion story by the lake for Vogue new shot</div>
+                        <p>Such exposure to the fashion and beauty industries enabled her passion for branding and
+                            creativity to transition from one side of the camera to the other.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec">
+                <div>
+                    <img src="./images/1.jpg" alt="">
+                    <p>Maison ARTC: memories and culture,<br>
+                        the base of futuristic fashion <br>
+                        awareness. Tilila Oulhaj look
+                    </p>
+                </div>
+                <img src="./banners/3.jpg" alt="">
+            </section>
+
+            <section class="third-her-sec">
+                <img src="./banners/4.jpg" alt="">
+            </section>
+        </div>
+        <div id="third-hero">
+            <h1>Updates</h1>
+            <div class="third-lines">
+                <div class="tl-left">
+                    MENS
+                    <br>
+                    Fashion
+                </div>
+                <div class="tl-center-img-cont">
+                    <img src="./images/5.jpg" alt="">
+                </div>
+                <div class="tl-right">
+                    <h3>Khadim & Tom Ford</h3>
+                    <span class="tl-right-sm-text">
+                        25TH MARCH 2020
+                    </span>
+                </div>
+            </div>
+            <div class="third-lines">
+                <div class="tl-left">
+                    woMENS
+                    <br>
+                    Fashion
+                </div>
+                <div class="tl-center-img-cont">
+                    <img src="./images/9.jpg" alt="">
+                </div>
+                <div class="tl-right">
+                    <h3>Arena Homme</h3>
+                    <span class="tl-right-sm-text">
+                        3rd february 2020
+                    </span>
+                </div>
+            </div>
+            <div class="third-lines">
+                <div class="tl-left">
+                    Special
+                    <br>
+                    view
+                </div>
+                <div class="tl-center-text">
+                    <h3>Exclusive</h3>
+                    <span>2020 redesign</span>
+                </div>
+                <div class="tl-right">
+                    <h3>Jing for Wonderland</h3>
+                    <span class="tl-right-sm-text">
+                        14th January 2020
+                    </span>
+                </div>
+            </div>
+            <div class="third-lines">
+                <div class="tl-left">
+                    Models
+                    <br>
+                    talk
+                </div>
+                <div class="tl-center-img-cont">
+                    <!-- <img src="./images/1.jpg" alt=""> -->
+                </div>
+                <div class="tl-right">
+                    <h3>Glass x Belle</h3>
+                    <span class="tl-right-sm-text">
+                        08th January 2020
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="fourth-hero">
+            <div class="fh-sections">
+                <div class="big-sec">
+                    <img src="./images/2.jpg" alt="">
+                </div>
+                <div class="sec-sec">
+                    <h1>MOVIE SHOT</h1>
+                    <div>London based Tom Mtcell has
+                        <br>
+                        a distinct aesthetic witihn his
+                        <br>
+                        photography & moving image
+                    </div>
+                    <p>Tom's calm nature andeagerness to create; while still maintaining a high level of
+                        professionalism, has seen him slide into the fashion industry photographing campaigns, look
+                        books, editorials, potraits short films and TV commercials.</p>
+                    <div class="fh-img-cont">
+                        <img src="./images/10.jpg" alt="">
+                        <img src="./images/12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="fh-sections img">
+                <img src="./banners/5.jpg" alt="">
+            </div>
+
+            <div class="fh-sections">
+                <div class="big-sec">
+                    <img src="./images/4.jpg" alt="">
+                </div>
+                <div class="sec-sec">
+                    <div class="fh-lst-cont full-img">
+                        <img src="./images/13.jpg" alt="">
+                    </div>
+                    <div class="fh-last-text">
+                        <div>"Body" and "No lie"- 90's inspired R&B sound that is drawing a new comparisons to Dua Lipa
+                        </div>
+                        <p>There aren't many 22 year-olds with the intropection of icelandic artist Glowie - real name
+                            Sara petursdotirr - but then again, she's always been one for doing her own thing.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sec-marquee">
+            <div id="sec-marquee-track">
+                <h1>PREMIER MODELS 2020</h1>
+                <h1>PREMIER MODELS 2020</h1>
+                <h1>PREMIER MODELS 2020</h1>
+                <h1>PREMIER MODELS 2020</h1>
+                <h1>PREMIER MODELS 2020</h1>
+                <h1>PREMIER MODELS 2020</h1>
+            </div>
+        </div>
+
+
+        <div id="last-sec">
+            <h2>BLOG</h2>
+            <div class="lst-cntn-w-img">
+                <div class="ls-cntnt">
+                    <p>
+                        <span class="blog-badge">B</span>
+                        Jack Thompson features in a story crossing bridges for ID magazine Tomlinson, styled by Louise
+                        Prier Tisdall.
+                    </p>
+                </div>
+                <img src="./images/11.jpg" alt="">
+            </div>
+            
+            <div class="lst-cntn-w-img">
+                <div class="ls-cntnt">
+                    <p>
+                        <span class="blog-badge">B</span>
+                        Jack Thompson features in a story crossing bridges for ID magazine Tomlinson, styled by Louise
+                        Prier Tisdall.
+                    </p>
+                </div>
+                <img src="./images/6.jpg" alt="">
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div id="left-foot">
+                <div id="ft-logo">
+                    <h1 class="logo">Premier<sup>&copy;</sup></h1>
+                    <span>model management</span>
+                </div>
+                <h2>Models</h2>
+            </div>
+            <div id="right-foot">
+                <h2>Women / Man</h2>
+                <div id="rf-bot">
+                    <h2>Agency / Blog / Information</h2>
+                    <div>
+                        &copy; All content copyright <br>
+                        PREMIER MODELS Inc. 1981-2020 / or their respective <br>
+                        owners where indicated. 
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>

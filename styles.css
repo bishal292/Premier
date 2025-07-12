@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+main {
+  padding-top: 0.1px;
+}
+
+/* ---------------------------------------------------------------------- 
+                                Navbar Styles
+-------------------------------------------------------------------------
+*/
+.navbar {
+  min-height: 60px;
+  margin-top: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.left-nav {
+  position: relative;
+  padding-left: 7%;
+}
+.left-nav div {
+  position: absolute;
+  left: 65%;
+  bottom: 11%;
+  color: rgb(114, 112, 112);
+}
+.logo {
+  font-family: "roboto";
+  display: inline-block;
+  font-size: 40px;
+  letter-spacing: -3px;
+  font-weight: 900;
+  position: relative;
+}
+.logo ~ div {
+  font-size: 10px;
+}
+.right-nav {
+  width: 80%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.right-nav h2 {
+  border-right: 2px solid black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: 100;
+}
+.right-nav h2:nth-last-child(1) {
+  border-right: none;
+  width: 39%;
+}
+
+/* ----------------------------------------------------------------------
+                                Hero Section
+------------------------------------------------------------------------
+ */
+#hero {
+  width: 100%;
+  height: 85vh;
+  padding: 40px 80px;
+}
+#video-sec {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#video-sec video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#overlay-text {
+  height: 45%;
+  width: 100%;
+  position: absolute;
+  padding: 20px 40px;
+  color: white;
+  bottom: 0;
+}
+
+#ot-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+}
+#ot-first h1 {
+  font-family: "roboto";
+  font-size: 42px;
+  letter-spacing: -1px;
+}
+#ot-first div {
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  border-right: 2px solid #f8f8f8;
+}
+#ot-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+#ot-sec span {
+  font-size: 40px;
+}
+
+/* --------------------------------------
+                MARQUEE
+-----------------------------------------
+*/
+#marquee {
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden; /* Hide scrollbar effective when animating */
+  padding: 40px 0;
+  gap: 15px;
+  position: relative;
+}
+#marquee-track {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  animation: marquee 3s linear infinite;
+}
+#marquee::-webkit-scrollbar {
+  display: none;
+}
+.data-container {
+  flex: 1 1 0;
+  text-align: center;
+  font-size: 20px;
+}
+.image-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* --------------------------------------
+              Filter Section
+-----------------------------------------
+*/
+
+#filter {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  overflow-x: scroll;
+}
+#filter h3 {
+  font-weight: 100;
+  text-decoration: underline;
+  font-style: italic;
+}
+#letter-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+#letter-cont .filter-text {
+  font-size: 18px;
+  font-weight: 100;
+  font-style: italic;
+  padding: 7px;
+}
+#letter-cont .filter-text.active {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+#letter-cont .filter-text.empty {
+  color: gray;
+}
+
+/* ------------------------------------------
+                Second Hero Section
+---------------------------------------------
+*/
+#sec-hero {
+  width: 100%;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* background-color: aquamarine; */
+}
+#sec-hero section {
+  /* background-color: blue; */
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 500px;
+}
+#sec-hero section > div {
+  /* background-color: red; */
+}
+
+#first div.left {
+  width: 200%;
+}
+#first div.left img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+#first div.left h1 {
+  font-weight: 900;
+  font-family: "roboto";
+  padding-top: 7px;
+}
+
+#first div.right img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: 0% 20%;
+}
+#first div.right > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  padding-top: 10px;
+}
+#first div.right > div div {
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+#sec-hero section#sec {
+  height: 600px;
+}
+#sec > div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sec > div img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  /* background-color: green; */
+}
+#sec > div p {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+#sec > img {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.third-her-sec img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ---------------------------------------------------------------
+                Third Part of Hero Section
+------------------------------------------------------------------
+*/
+#third-hero {
+  width: 100%;
+  padding: 30px 80px;
+  margin-bottom: 30px;
+}
+#third-hero > h1 {
+  font-family: "roboto";
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#third-hero .third-lines {
+  height: 74px;
+  display: flex;
+  border-top: 2px solid black;
+  padding: 7px;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+#third-hero .third-lines:last-child {
+  border-bottom: 2px solid black;
+}
+.tl-center-img-cont {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+}
+.tl-center-img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center top;
+}
+.tl-right {
+  width: 50%;
+}
+.tl-right h3,
+.tl-center-text h3 {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 0.8;
+}
+
+.tl-left {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.tl-right-sm-text,
+.tl-center-text span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* ---------------------------------------------------------------
+                Fourth Part of Hero Section
+------------------------------------------------------------------ 
+ */
+#fourth-hero {
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  /* background-color: red; debugging */
+}
+
+.fh-sections {
+  width: 90vw;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; debugging */
+}
+
+.big-sec,
+.sec-sec {
+  height: 100%;
+}
+
+.big-sec {
+  width: 50%;
+  /* background-color: grey; debugging */
+}
+.big-sec img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.sec-sec {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: space-between;
+  /* background-color: green; debugging */
+}
+.sec-sec h1 {
+  font-family: "Monument", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.sec-sec p {
+  font-size: 14px;
+  font-weight: 100;
+}
+.sec-sec div {
+      font-size: 18px;
+    font-weight: 600;
+}
+
+.sec-sec .fh-img-cont {
+  /* flex: 1; */
+  width: 100%;
+  height: 55%;
+  /* background-color: turquoise; */
+}
+.fh-img-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-sec .fh-img-cont img {
+  width: 49%;
+  height: 100%;
+  /* background-color: bisque; */
+  object-fit: cover;
+  object-position: center;
+}
+.fh-sections.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.fh-lst-cont {
+  width: 100%;
+  height: 65%;
+}
+.fh-lst-cont.full-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.fh-last-text {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------------------------------
+                Last Marquee Section
+---------------------------------------------------------------------- */
+
+#sec-marquee {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  overflow-x: hidden; /* Hide scrollbar effective when animating */
+  position: relative;
+  margin-bottom: 20px;
+}
+#sec-marquee-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 3s linear infinite;
+}
+#sec-marquee-track h1 {
+  font-family: "Monument", sans-serif;
+  font-size: 30px;
+  margin: 0 30px;
+  flex: 0 0 auto;
+  color: transparent;
+  -webkit-text-stroke: 1px grey;
+}
+
+#last-sec {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  width: 100vw;
+  height: 60vh;
+  padding: 0 80px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.lst-cntn-w-img {
+  width: 38%;
+  height: 100%;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.lst-cntn-w-img > img {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-badge {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#footer {
+  width: 100%;
+  height: 180px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#left-foot {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+#left-foot > h2 {
+  padding: 20px;
+}
+#ft-logo {
+  position: relative;
+}
+.logo sup {
+  font-size: 18px;
+}
+#ft-logo span {
+  position: absolute;
+  top: 39px;
+  right: -10px;
+  font-size: 12px;
+}
+
+#right-foot {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+#right-foot > * {
+  text-align: center;
+  width: 100%;
+  border-left: 2px solid black;
+}
+#right-foot > h2 {
+  padding: 20px;
+}
+
+#rf-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#rf-bot > * {
+  padding: 20px;
+}
+#rf-bot > h2 {
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  font-weight: 900;
+}
+#rf-bot > div {
+  text-align: left;
+  font-size: 12px;
+}
