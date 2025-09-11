@@ -133,14 +133,14 @@ main {
   padding: 10px 0;
   overflow: hidden; /* Hide scrollbar effective when animating */
   padding: 40px 0;
-  gap: 15px;
   position: relative;
 }
 #marquee-track {
   width: fit-content;
   display: flex;
+  gap: 15px;
   align-items: center;
-  animation: marquee 3s linear infinite;
+  animation: marquee 7s linear infinite;
 }
 #marquee::-webkit-scrollbar {
   display: none;
@@ -203,10 +203,16 @@ main {
   font-weight: 100;
   font-style: italic;
   padding: 7px;
+  border: 2px solid transparent; /* Prevents movement on hover/active */
+  border-radius: 50%;
+  transition: border-color 0.2s;
 }
 #letter-cont .filter-text.active {
-  border: 2px solid black;
-  border-radius: 50%;
+  border-color: black;
+}
+#letter-cont .filter-text:hover {
+  cursor: pointer;
+  border-color: rgb(113, 113, 113);
 }
 #letter-cont .filter-text.empty {
   color: gray;
